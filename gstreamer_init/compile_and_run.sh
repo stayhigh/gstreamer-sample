@@ -1,1 +1,1 @@
-gcc  `pkg-config --libs gstreamer-1.0` -I/Library/Frameworks/GStreamer.framework/Headers gstreamer_init.c -o gstreamer_init && ./gstreamer_init
+gcc  `pkg-config --cflags --libs gstreamer-1.0` gstreamer_init.c -o gstreamer_init && ./gstreamer_init
